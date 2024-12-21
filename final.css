@@ -1,0 +1,359 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #e3653d;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Arama Kutusu */
+.aramakutusu {
+    max-width: 800px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.aramakutusu input[type="text"] {
+    padding: 15px;
+    width: 70%;
+    border-radius: 30px 0 0 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.aramakutusu button {
+    padding: 15px 30px;
+    background-color: #ff5733;
+    border: none;
+    border-radius: 0 30px 30px 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.aramakutusu button:hover {
+    background-color: #ff3d00;
+}
+
+
+.hero {
+    background: url('WhatsApp Görsel 2024-12-19 saat 11.19.13_99063894.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    /* background-color: #ccc; */
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ff5733;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #ff3d00;
+}
+
+
+.menu-items {
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    
+}
+
+.menu-item {
+    width: calc(33.333% - 20px);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.menu-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.menu-item p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.menu-item span {
+    display: block;
+    font-weight: bold;
+    color: green;
+    margin-bottom: 10px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    color: green;
+    font-weight: bold;
+}
+
+del {
+    color: red;
+    opacity: 0.7;
+}
+
+.tag {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    font-size: 0.8rem;
+    top: -10px;
+    right: -5px;
+}
+
+/* Footer */
+.footer {
+    background-color: #e3653d;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .menu-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-item {
+        width: 100%;
+    }
+}
+
+
+section {
+    text-align: center;
+    margin: 40px auto; 
+    padding: 20px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #e3653d;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+.menu-item {
+    margin: 0 auto; 
+}
+
+#commentsList {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#commentsList h4 {
+    color: #e3653d;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.list-group-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item strong {
+    color: #ff5733;
+}
+
+.list-group-item:hover {
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+
+#commentForm {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#commentForm .form-label {
+    color: #333;
+    font-weight: bold;
+}
+
+#commentForm input,
+#commentForm textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#commentForm input:focus,
+#commentForm textarea:focus {
+    border-color: #ff5733;
+    box-shadow: 0 0 5px rgba(255, 87, 51, 0.5);
+    outline: none;
+}
+
+#commentForm button {
+    background-color: #e3653d;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#commentForm button:hover {
+    background-color: #ff5733;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    .menu-items {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .menu-item img {
+        height: auto; /* Ensure images maintain aspect ratio */
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr; 
+    }
+
+    .hero h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .aramakutusu input[type="text"] {
+        width: 60%;
+    }
+}
